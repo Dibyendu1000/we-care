@@ -1,0 +1,21 @@
+.card-main {
+  background-color: black;
+  width: 250px;
+  height: 20rem;
+  border-radius: 10px;
+  text-align: center;
+  margin: 20px;
+}
+
+.logo {
+  padding-top: 30px;
+}
+
+button {
+  background-color: teal;
+  color: white;
+  border-radius: 5px;
+  width: 80%;
+  padding: 8px;
+  margin: 5px;
+}
