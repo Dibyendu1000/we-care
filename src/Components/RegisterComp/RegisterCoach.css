@@ -1,0 +1,72 @@
+form {
+  color: white;
+  background-color: black;
+  width: 700px;
+  height: 500px;
+  border-radius: 10px;
+}
+
+img {
+  width: 50px;
+  float: initial;
+}
+
+.form-header {
+  text-align: center;
+}
+
+.register-main {
+  margin: auto;
+  width: fit-content;
+  height: fit-content;
+  padding: 50px;
+}
+
+#coach-register-field {
+  margin: 10px;
+  float: left;
+}
+.coach-gender-register {
+  padding-right: 230px;
+}
+
+.name {
+  width: 300px;
+  border-radius: 5px;
+  height: 30px;
+  color: black;
+}
+.password {
+  width: 300px;
+  border-radius: 5px;
+  height: 30px;
+  color: black;
+}
+.dob {
+  width: 300px;
+  border-radius: 5px;
+  height: 30px;
+  color: black;
+}
+.mobile {
+  width: 300px;
+  border-radius: 5px;
+  height: 30px;
+  color: black;
+}
+.speciality {
+  width: 300px;
+  border-radius: 5px;
+  height: 30px;
+  color: black;
+}
+
+.coach-button-register {
+  text-align: center;
+}
+
+button {
+  background-color: green;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  width: 50%;
+}
