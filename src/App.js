@@ -11,6 +11,7 @@ function App() {
         <Route index element={<Home />} />
         <Route path="login/coach" element={<Login type={"Coach"} />} />
         <Route path="login/user" element={<Login type={"User"} />} />
+        <Route path="register/coach" element={<RegisterCoach />} />
       </Routes>
     </BrowserRouter>
   );

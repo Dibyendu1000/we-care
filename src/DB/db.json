@@ -1,37 +1,46 @@
 {
-    "users": [
-      {
-        "id": 1,
-        "name": "Maria",
-        "password": "maria12345",
-        "gender": "F",
-        "dateOfBirth": "1996-01-01",
-        "email": "maria@gmail.com",
-        "mobileNumber": 1234567890,
-        "pincode": 123456,
-        "city": "Bangalore",
-        "state": "Karnataka",
-        "country": "India"
-      }
-    ],
-    "coaches": [
-      {
-        "id": 1,
-        "name": "Rose",
-        "password": "rose12345",
-        "gender": "F",
-        "dateOfBirth": "1996-01-01",
-        "mobileNumber": 1234567890,
-        "speciality": "Confidence Issues"
-      }
-    ],
-    "bookings": [
-      {
-        "appointmentDate": "2020-09-24",
-        "slot": "10 AM to 11 AM",
-        "userId": 1,
-        "coachId": 1,
-        "id": 1
-      }
-    ]
-  }
+  "users": [
+    {
+      "id": "1",
+      "name": "Maria",
+      "password": "maria12345",
+      "gender": "F",
+      "dateOfBirth": "1996-01-01",
+      "email": "maria@gmail.com",
+      "mobileNumber": 1234567890,
+      "pincode": 123456,
+      "city": "Bangalore",
+      "state": "Karnataka",
+      "country": "India"
+    }
+  ],
+  "coaches": [
+    {
+      "id": "1",
+      "name": "Rose",
+      "password": "rose12345",
+      "gender": "F",
+      "dateOfBirth": "1996-01-01",
+      "mobileNumber": 1234567890,
+      "speciality": "Confidence Issues"
+    },
+    {
+      "id": "6947",
+      "name": "Arnold",
+      "password": "12346",
+      "dateOfBirth": "2024-05-10",
+      "gender": "M",
+      "mobileNumber": "12345",
+      "speciality": "Muscle Building"
+    }
+  ],
+  "bookings": [
+    {
+      "appointmentDate": "2020-09-24",
+      "slot": "10 AM to 11 AM",
+      "userId": 1,
+      "coachId": 1,
+      "id": "1"
+    }
+  ]
+}

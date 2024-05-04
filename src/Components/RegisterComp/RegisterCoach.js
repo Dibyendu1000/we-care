@@ -27,7 +27,7 @@ function RegisterCoach() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     console.log("Submitted", user);
-    //await registerCoach(user);
+    await registerCoach(user);
   };
 
   return (

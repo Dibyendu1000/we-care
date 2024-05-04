@@ -11,3 +11,11 @@ export const getIdentityById = async (id) => {
   const identityDetails = res.ok === true ? await res.json() : null;
   return identityDetails;
 };
+
+export const registerIdentity = async (path, payload) => {
+  const res = await fetch(baseURL + path, {
+    method: "POST",
+    body: JSON.stringify(payload),
+    headers: { "Content-Type": "application/json" },
+  });
+};

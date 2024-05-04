@@ -13,6 +13,10 @@ function Cards({ type }) {
     if (type === "Coach") navigate("/login/coach");
     else navigate("/login/user");
   };
+  const goToRegister = (e) => {
+    e.preventDefault();
+    if (type === "Coach") navigate("/register/coach");
+  };
 
   return (
     <div className="card-main">
@@ -21,7 +25,9 @@ function Cards({ type }) {
         Login as a {type}
       </button>
       <br />
-      <button className="join">Join as a {type}</button>
+      <button className="join" onClick={goToRegister}>
+        Join as a {type}
+      </button>
     </div>
   );
 }
