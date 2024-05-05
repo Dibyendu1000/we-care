@@ -16,14 +16,14 @@ function Login({ type }) {
 
     if (type === "User") {
       const userDetails = await userApi.getUserById(id);
-      if (userDetails && userDetails.password == password) {
+      if (userDetails && userDetails.password === password) {
         console.log(userDetails);
       } else {
         console.log("Invalid");
       }
     } else {
       const coachDetails = await coachApi.getCoachById(id);
-      if (coachDetails && coachDetails.password == password) {
+      if (coachDetails && coachDetails.password === password) {
         console.log(coachDetails);
       } else {
         console.log("Invalid");

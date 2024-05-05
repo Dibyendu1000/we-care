@@ -16,8 +16,7 @@ const initalValues = {
 
 function RegisterCoach() {
   const [user, setUser] = useState(initalValues);
-  const { name, password, dateOfBirth, gender, mobileNumber, speciality } =
-    user;
+  const { name, password, dateOfBirth, mobileNumber, speciality } = user;
 
   const handleChange = (e) => {
     setUser({ ...user, [e.target.name]: e.target.value });
@@ -36,7 +35,7 @@ function RegisterCoach() {
       <div className="register-main">
         <form className="register-form">
           <div className="form-header">
-            <img src={coach} />
+            <img src={coach} alt="coachLogo" />
             <h3>Life Coach Profile</h3>
           </div>
           <div className="coach-name-register" id="coach-register-field">

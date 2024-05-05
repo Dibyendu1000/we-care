@@ -5,7 +5,7 @@ export const getAllCoaches = async () => {
 };
 
 export const getCoachById = async (id) => {
-  return await getIdentityById("/coaches/" + id);
+  return await getIdentityById("/coaches/", id);
 };
 
 export const registerCoach = async (payload) => {
