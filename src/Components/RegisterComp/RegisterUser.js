@@ -4,6 +4,8 @@ import Navbar from "../NavBarComp/NavBar";
 import userLogo from "../../Assets/user.png";
 import { registerUser } from "../../Services/userApi";
 import "./RegisterUser.css";
+import { useNavigate } from "react-router-dom";
+import checkIfEmpty from "../../Services/validation";
 
 function RegisterUser() {
   const initalValues = {
@@ -30,7 +32,7 @@ function RegisterUser() {
     state,
     country,
   } = user;
-
+  const navigate = useNavigate();
   const handleChange = (e) => {
     setUser({ ...user, [e.target.name]: e.target.value });
     console.log(user);
@@ -39,45 +41,51 @@ function RegisterUser() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     console.log("Submitted", user);
-    await registerUser(user);
+    const emptyMessage = checkIfEmpty(user);
+    if (emptyMessage.length === 0) {
+      await registerUser(user);
+      navigate("/login/user");
+    } else {
+      alert(emptyMessage);
+    }
   };
   return (
     <>
       <Navbar />
-      <div className="register-main">
-        <form className="register-form">
-          <div className="form-header">
+      <div className="register-main-user">
+        <form className="register-form-user">
+          <div className="form-header-user">
             <img src={userLogo} alt="userLogo" />
             <h3>User Profile</h3>
           </div>
           <div className="user-name-register" id="user-register-field">
-            <lable for="name">Name</lable>
+            <lable for="name-user">Name</lable>
             <br />
             <input
               type="text"
-              className="name"
+              className="name-user"
               value={name}
               name="name"
               onChange={handleChange}
             />
           </div>
           <div className="user-password-register" id="user-register-field">
-            <lable for="password">Password</lable>
+            <lable for="password-user">Password</lable>
             <br />
             <input
               type="text"
-              className="password"
-              name="password"
+              className="password-user"
+              name="password-user"
               value={password}
               onChange={handleChange}
             />
           </div>
           <div className="user-dob-register" id="user-register-field">
-            <lable for="dob">Date of Birth</lable>
+            <lable for="dob-user">Date of Birth</lable>
             <br />
             <input
               type="date"
-              className="dob"
+              className="dob-user"
               name="dateOfBirth"
               value={dateOfBirth}
               onChange={handleChange}
@@ -104,11 +112,11 @@ function RegisterUser() {
             />
           </div>
           <div className="user-mobile-register" id="user-register-field">
-            <lable for="mobile">Mobile Number</lable>
+            <lable for="mobile-user">Mobile Number</lable>
             <br />
             <input
               type="text"
-              className="mobile"
+              className="mobile-user"
               name="mobileNumber"
               value={mobileNumber}
               onChange={handleChange}
@@ -170,7 +178,7 @@ function RegisterUser() {
             />
           </div>
           <div className="user-button-register">
-            <button className="register" onClick={handleSubmit}>
+            <button className="register-user" onClick={handleSubmit}>
               Register
             </button>
           </div>

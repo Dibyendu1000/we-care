@@ -1,9 +1,11 @@
-form {
+.register-main-coach {
   color: white;
   background-color: black;
   width: 700px;
   height: 500px;
   border-radius: 10px;
+  margin: auto;
+  padding: 0px 10px 10px 10px;
 }
 
 img {
@@ -11,15 +13,9 @@ img {
   float: initial;
 }
 
-.form-header {
+.form-header-coach {
+  margin-top: 20px;
   text-align: center;
-}
-
-.register-main {
-  margin: auto;
-  width: fit-content;
-  height: fit-content;
-  padding: 50px;
 }
 
 #coach-register-field {
@@ -30,31 +26,31 @@ img {
   padding-right: 230px;
 }
 
-.name {
+.name-coach {
   width: 300px;
   border-radius: 5px;
   height: 30px;
   color: black;
 }
-.password {
+.password-coach {
   width: 300px;
   border-radius: 5px;
   height: 30px;
   color: black;
 }
-.dob {
+.dob-coach {
   width: 300px;
   border-radius: 5px;
   height: 30px;
   color: black;
 }
-.mobile {
+.mobile-coach {
   width: 300px;
   border-radius: 5px;
   height: 30px;
   color: black;
 }
-.speciality {
+.speciality-coach {
   width: 300px;
   border-radius: 5px;
   height: 30px;
@@ -65,8 +61,11 @@ img {
   text-align: center;
 }
 
-button {
-  background-color: teal;
+.register-coach {
+  background-color: green;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   width: 50%;
+  position: relative;
+  top: 250px;
+  left: -160px;
 }

@@ -2,8 +2,10 @@ import { useState } from "react";
 import Footer from "../FooterComp/Footer";
 import Navbar from "../NavBarComp/NavBar";
 import "./RegisterCoach.css";
-import coach from "../../Assets/coach.png";
+import coachLogo from "../../Assets/coach.png";
 import { registerCoach } from "../../Services/coachApi";
+import { useNavigate } from "react-router-dom";
+import checkIfEmpty from "../../Services/validation";
 
 const initalValues = {
   name: "",
@@ -17,6 +19,7 @@ const initalValues = {
 function RegisterCoach() {
   const [user, setUser] = useState(initalValues);
   const { name, password, dateOfBirth, mobileNumber, speciality } = user;
+  const navigate = useNavigate();
 
   const handleChange = (e) => {
     setUser({ ...user, [e.target.name]: e.target.value });
@@ -26,46 +29,52 @@ function RegisterCoach() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     console.log("Submitted", user);
-    await registerCoach(user);
+    const emptyMessage = checkIfEmpty(user);
+    if (emptyMessage.length === 0) {
+      await registerCoach(user);
+      navigate("/login/coach");
+    } else {
+      alert(emptyMessage);
+    }
   };
 
   return (
     <>
       <Navbar />
-      <div className="register-main">
-        <form className="register-form">
-          <div className="form-header">
-            <img src={coach} alt="coachLogo" />
+      <div className="register-main-coach">
+        <form className="register-form-coach">
+          <div className="form-header-coach">
+            <img src={coachLogo} alt="coachLogo" />
             <h3>Life Coach Profile</h3>
           </div>
           <div className="coach-name-register" id="coach-register-field">
-            <lable for="name">Name</lable>
+            <lable for="name-coach">Name</lable>
             <br />
             <input
               type="text"
-              className="name"
+              className="name-coach"
               value={name}
               name="name"
               onChange={handleChange}
             />
           </div>
           <div className="coach-password-register" id="coach-register-field">
-            <lable for="password">Password</lable>
+            <lable for="password-coach">Password</lable>
             <br />
             <input
               type="text"
-              className="password"
+              className="password-coach"
               name="password"
               value={password}
               onChange={handleChange}
             />
           </div>
           <div className="coach-dob-register" id="coach-register-field">
-            <lable for="dob">Date of Birth</lable>
+            <lable for="dob-coach">Date of Birth</lable>
             <br />
             <input
               type="date"
-              className="dob"
+              className="dob-coach"
               name="dateOfBirth"
               value={dateOfBirth}
               onChange={handleChange}
@@ -92,29 +101,29 @@ function RegisterCoach() {
             />
           </div>
           <div className="coach-mobile-register" id="coach-register-field">
-            <lable for="mobile">Mobile Number</lable>
+            <lable for="mobile-coach">Mobile Number</lable>
             <br />
             <input
               type="text"
-              className="mobile"
+              className="mobile-coach"
               name="mobileNumber"
               value={mobileNumber}
               onChange={handleChange}
             />
           </div>
           <div className="coach-speciality-register" id="coach-register-field">
-            <lable for="speciality">Speciality</lable>
+            <lable for="speciality-coach">Speciality</lable>
             <br />
             <input
               type="text"
-              className="speciality"
+              className="speciality-coach"
               name="speciality"
               value={speciality}
               onChange={handleChange}
             />
           </div>
           <div className="coach-button-register">
-            <button className="register" onClick={handleSubmit}>
+            <button className="register-coach" onClick={handleSubmit}>
               Register
             </button>
           </div>
