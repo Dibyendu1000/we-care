@@ -1,7 +1,9 @@
 import { getAllIdentities, getIdentityById, registerIdentity } from "./baseApi";
 
 export const getAllCoaches = async () => {
-  return await getAllIdentities("/coaches/");
+  const x = await getAllIdentities("/coaches/");
+  console.log(x);
+  return x;
 };
 
 export const getCoachById = async (id) => {

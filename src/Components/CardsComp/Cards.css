@@ -13,7 +13,8 @@
   padding-bottom: 20px;
 }
 
-button {
+.login-card,
+.join-card {
   background-color: teal;
   color: white;
   border-radius: 5px;

@@ -12,6 +12,19 @@
       "city": "Bangalore",
       "state": "Karnataka",
       "country": "India"
+    },
+    {
+      "id": "6ee5",
+      "name": "Santa Claus",
+      "password": "123456",
+      "dateOfBirth": "2024-05-16",
+      "gender": "M",
+      "mobileNumber": "13313131",
+      "email": "santa.claus@email.com",
+      "pincode": "123",
+      "city": "ABC",
+      "state": "GHI",
+      "country": "XYZ"
     }
   ],
   "coaches": [
@@ -32,6 +45,15 @@
       "gender": "M",
       "mobileNumber": "12345",
       "speciality": "Muscle Building"
+    },
+    {
+      "id": "2dc4",
+      "name": "Jordan",
+      "password": "Peterson",
+      "dateOfBirth": "2024-05-06",
+      "gender": "M",
+      "mobileNumber": "12345",
+      "speciality": "Psycology"
     }
   ],
   "bookings": [

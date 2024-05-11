@@ -6,18 +6,26 @@ import Navbar from "../NavBarComp/NavBar";
 import "./Login.css";
 import * as coachApi from "../../Services/coachApi";
 import * as userApi from "../../Services/userApi";
+import checkIfEmpty from "../../Services/validation";
+import { useNavigate } from "react-router-dom";
 
 function Login({ type }) {
   const [id, setId] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    const emptyMessage = checkIfEmpty({ id, password });
+    if (emptyMessage.length !== 0) {
+      alert(emptyMessage);
+    }
 
     if (type === "User") {
       const userDetails = await userApi.getUserById(id);
       if (userDetails && userDetails.password === password) {
         console.log(userDetails);
+        navigate("/userhome");
       } else {
         console.log("Invalid");
       }

@@ -2,8 +2,9 @@ const baseURL = "http://localhost:8080";
 
 export const getAllIdentities = async (path) => {
   const res = await fetch(baseURL + path);
-  const identities = res.json();
+  const identities = await res.json();
   console.log(identities);
+  return identities;
 };
 
 export const getIdentityById = async (path, id) => {

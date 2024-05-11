@@ -3,11 +3,13 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import CoachCard from "./Components/AccountCardComp/CoachCard";
+import LoginUserHome from "./Components/LoginHomeComp/LoginUserHome";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <LoginUserHome />
   </React.StrictMode>
 );
 

@@ -1,0 +1,25 @@
+.coach-card-main {
+  background-color: black;
+  color: white;
+  width: 450px;
+  height: 275px;
+  border-radius: 10px;
+  display: inline-block;
+  margin: 30px;
+}
+
+.coach-card-header {
+  padding: 20px;
+}
+.coach-gender-logo {
+  width: 170px;
+  float: left;
+  padding: 20px;
+}
+.book-appointment-btn {
+  background-color: dodgerblue;
+  color: white;
+  width: 200px;
+  border-radius: 5px;
+  padding: 5px;
+}

@@ -26,11 +26,11 @@ function Cards({ type }) {
         src={type === "User" ? user : coach}
         alt="cardLogo"
       />
-      <button className="login" onClick={goToLogin}>
+      <button className="login-card" onClick={goToLogin}>
         Login as a {type}
       </button>
       <br />
-      <button className="join" onClick={goToRegister}>
+      <button className="join-card" onClick={goToRegister}>
         Join as a {type}
       </button>
     </div>

@@ -1,10 +1,11 @@
-h5 {
+.footer-text {
   background-color: black;
-  position: absolute;
   color: white;
   width: 100%;
   bottom: 0;
-  height: 1.25rem;
+  height: 25px;
+  line-height: 25px;
   text-align: center;
   margin: 0;
+  position: fixed;
 }
