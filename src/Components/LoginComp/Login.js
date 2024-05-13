@@ -13,10 +13,10 @@ function Login({ type }) {
   const [id, setId] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     const emptyMessage = checkIfEmpty({ id, password });
+
     if (emptyMessage.length !== 0) {
       alert(emptyMessage);
     }
@@ -25,7 +25,7 @@ function Login({ type }) {
       const userDetails = await userApi.getUserById(id);
       if (userDetails && userDetails.password === password) {
         console.log(userDetails);
-        navigate("/userhome");
+        navigate("/user/home");
       } else {
         console.log("Invalid");
       }

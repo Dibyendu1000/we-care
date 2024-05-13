@@ -6,9 +6,9 @@ function CoachCard({ coachDetails }) {
   return (
     <div className="coach-card-main">
       <img
-        src={coachDetails.gender == "F" ? femaleLogo : maleLogo}
+        src={coachDetails.gender === "F" ? femaleLogo : maleLogo}
         className="coach-gender-logo"
-        alt={coachDetails.gender == "F" ? "femaleLogo" : "maleLogo"}
+        alt={coachDetails.gender === "F" ? "femaleLogo" : "maleLogo"}
       />
       <h2 className="coach-card-header">{coachDetails.name}</h2>
       <h3>Coach Id: {coachDetails.id}</h3>

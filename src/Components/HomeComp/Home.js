@@ -7,15 +7,18 @@ function Home() {
   return (
     <>
       <Navbar />
-      <h1 className="Moto">We are at the heart of appropriate care</h1>
-      <div className="cards">
-        <div className="coach-card">
-          <Cards type={"Coach"} />
-        </div>
-        <div className="user-card">
-          <Cards type={"User"} />
+      <div className="home-main">
+        <h1 className="Moto">We are at the heart of appropriate care</h1>
+        <div className="cards">
+          <div className="coach-card">
+            <Cards type={"Coach"} />
+          </div>
+          <div className="user-card">
+            <Cards type={"User"} />
+          </div>
         </div>
       </div>
+
       <Footer />
     </>
   );
