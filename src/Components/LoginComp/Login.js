@@ -25,7 +25,9 @@ function Login({ type }) {
       const userDetails = await userApi.getUserById(id);
       if (userDetails && userDetails.password === password) {
         console.log(userDetails);
-        navigate("/user/home");
+        localStorage.setItem("id", id);
+        localStorage.setItem("userType", "User");
+        navigate("/home");
       } else {
         console.log("Invalid");
       }
@@ -33,6 +35,9 @@ function Login({ type }) {
       const coachDetails = await coachApi.getCoachById(id);
       if (coachDetails && coachDetails.password === password) {
         console.log(coachDetails);
+        localStorage.setItem("id", id);
+        localStorage.setItem("userType", "Coach");
+        navigate("/home");
       } else {
         console.log("Invalid");
       }

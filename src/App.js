@@ -4,8 +4,9 @@ import Home from "./Components/HomeComp/Home";
 import Login from "./Components/LoginComp/Login";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import RegisterUser from "./Components/RegisterComp/RegisterUser";
-import LoginUserHome from "./Components/LoginHomeComp/LoginUserHome";
 import AccountCard from "./Components/AccountCardComp/AccountCard";
+import LoginHome from "./Components/LoginHomeComp/LoginHome";
+import MySchedule from "./Components/MyScheduleComp/MySchedule";
 
 function App() {
   return (
@@ -16,8 +17,9 @@ function App() {
         <Route path="login/user" element={<Login type={"User"} />} />
         <Route path="register/coach" element={<RegisterCoach />} />
         <Route path="register/user" element={<RegisterUser />} />
-        <Route path="user/home" element={<LoginUserHome />} />
-        <Route path="user/viewprofile" element={<AccountCard />} />
+        <Route path="home" element={<LoginHome />} />
+        <Route path="profile" element={<AccountCard />} />
+        <Route path="schedules" element={<MySchedule />} />
       </Routes>
     </BrowserRouter>
   );
