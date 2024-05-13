@@ -1,0 +1,42 @@
+.book-appointment-form {
+  background-color: black;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+  padding: 40px;
+}
+
+.book-appointment-header {
+  text-align: center;
+  background-image: url("../../Assets/bookAppointmentLogo.png");
+  background-size: 50px;
+  background-repeat: no-repeat;
+  background-position: 100px 0px;
+  padding: 10px;
+}
+
+.appointment-date-field {
+  width: 100%;
+  padding: 10px 10px;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.slot {
+  margin: 200px;
+  padding-bottom: 10px;
+}
+
+.slot-options {
+  padding-top: 20px;
+  width: 100%;
+}
+
+.confirm-appointment-btn {
+  background-color: green;
+  color: white;
+  margin: 20px;
+  width: 100%;
+  padding: 10px 10px;
+  border-radius: 5px;
+}

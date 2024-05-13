@@ -7,6 +7,7 @@ import RegisterUser from "./Components/RegisterComp/RegisterUser";
 import AccountCard from "./Components/AccountCardComp/AccountCard";
 import LoginHome from "./Components/LoginHomeComp/LoginHome";
 import MySchedule from "./Components/MyScheduleComp/MySchedule";
+import MyAppointment from "./Components/MyAppointmentComp/MyAppointment";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="home" element={<LoginHome />} />
         <Route path="profile" element={<AccountCard />} />
         <Route path="schedules" element={<MySchedule />} />
+        <Route path="appointments" element={<MyAppointment />} />
       </Routes>
     </BrowserRouter>
   );

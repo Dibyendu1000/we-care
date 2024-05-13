@@ -1,4 +1,10 @@
-import { getAllIdentities, getIdentityById, registerIdentity } from "./baseApi";
+import {
+  deleteIdentity,
+  getAllIdentities,
+  getIdentityById,
+  registerIdentity,
+  updateIdentity,
+} from "./baseApi";
 
 export const getAllBooking = async () => {
   return await getAllIdentities("/bookings/");
@@ -31,4 +37,12 @@ export const getBookingById = async (id) => {
 
 export const registerBooking = async (payload) => {
   return await registerIdentity("/bookings/", payload);
+};
+
+export const deleteBooking = async (id) => {
+  return await deleteIdentity("/bookings/", id);
+};
+
+export const updateBooking = async (id, payload) => {
+  await updateIdentity("/bookings/", id, payload);
 };

@@ -13,6 +13,8 @@ function Navbar() {
   const handleAppointment = () => {
     if (userType === "Coach") {
       navigate("/schedules");
+    } else if (userType === "User") {
+      navigate("/appointments");
     }
   };
   const handleProfile = () => {
@@ -34,7 +36,10 @@ function Navbar() {
         </li>
         {userType === "User" || userType === "Coach" ? (
           <li className="my-appointments" onClick={() => handleAppointment()}>
-            <h3> {userType == "User" ? "My Appointments" : "My Schedules"} </h3>
+            <h3>
+              {" "}
+              {userType === "User" ? "My Appointments" : "My Schedules"}{" "}
+            </h3>
           </li>
         ) : null}
         {userType === "User" || userType === "Coach" ? (

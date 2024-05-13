@@ -1,4 +1,4 @@
-.schedule-card-main {
+.appointment-card-main {
   text-align: center;
   background-color: black;
   color: white;
@@ -7,4 +7,58 @@
   border-radius: 10px;
   margin: 30px;
   display: inline-block;
+}
+
+.reschedule-appointment-btn {
+  background-color: teal;
+  color: white;
+  width: 300px;
+  padding: 10px 20px;
+  margin: 20px 0px;
+  border-radius: 5px;
+}
+.cancel-appointment-btn {
+  background-color: brown;
+  color: white;
+  width: 300px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.go-back-btn-appointment {
+  background-color: teal;
+  margin: 10px;
+  padding: 10px;
+  color: white;
+  border-radius: 5px;
+  width: 150px;
+  background-image: url("../../Assets/backArrow.png");
+  background-position: 20px 7px;
+  background-size: 20px;
+  background-repeat: no-repeat;
+}
+.my-appointment-btns {
+  text-align: center;
+}
+
+.cancel-appointment-popup {
+  text-align: center;
+}
+
+.yes-cancel-btn {
+  background-color: green;
+  color: white;
+  width: 100px;
+  border-radius: 5px;
+  padding: 5px 0px;
+  margin: 10px;
+}
+.no-color-btn {
+  background-color: red;
+  color: white;
+  width: 100px;
+  border-radius: 5px;
+  padding: 5px 0px;
+  margin: 10px;
 }

@@ -48,7 +48,7 @@ function RegisterCoach() {
             <h3>Life Coach Profile</h3>
           </div>
           <div className="coach-name-register" id="coach-register-field">
-            <lable for="name-coach">Name</lable>
+            <lable htmlFor="name-coach">Name</lable>
             <br />
             <input
               type="text"
@@ -59,7 +59,7 @@ function RegisterCoach() {
             />
           </div>
           <div className="coach-password-register" id="coach-register-field">
-            <lable for="password-coach">Password</lable>
+            <lable htmlFor="password-coach">Password</lable>
             <br />
             <input
               type="text"
@@ -70,7 +70,7 @@ function RegisterCoach() {
             />
           </div>
           <div className="coach-dob-register" id="coach-register-field">
-            <lable for="dob-coach">Date of Birth</lable>
+            <lable htmlFor="dob-coach">Date of Birth</lable>
             <br />
             <input
               type="date"
@@ -81,9 +81,9 @@ function RegisterCoach() {
             />
           </div>
           <div className="coach-gender-register" id="coach-register-field">
-            <lable for="gender">Gender</lable>
+            <lable htmlFor="gender">Gender</lable>
             <br />
-            <label for="male">Male</label>
+            <label htmlFor="male">Male</label>
             <input
               type="radio"
               className="male"
@@ -91,7 +91,7 @@ function RegisterCoach() {
               value="M"
               onChange={handleChange}
             />
-            <label for="female">Female</label>
+            <label htmlFor="female">Female</label>
             <input
               type="radio"
               className="female"
@@ -101,7 +101,7 @@ function RegisterCoach() {
             />
           </div>
           <div className="coach-mobile-register" id="coach-register-field">
-            <lable for="mobile-coach">Mobile Number</lable>
+            <lable htmlFor="mobile-coach">Mobile Number</lable>
             <br />
             <input
               type="text"
@@ -112,7 +112,7 @@ function RegisterCoach() {
             />
           </div>
           <div className="coach-speciality-register" id="coach-register-field">
-            <lable for="speciality-coach">Speciality</lable>
+            <lable htmlFor="speciality-coach">Speciality</lable>
             <br />
             <input
               type="text"

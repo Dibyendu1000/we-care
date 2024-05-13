@@ -1,6 +1,9 @@
 import maleLogo from "../../Assets/male.png";
 import femaleLogo from "../../Assets/female.png";
 import "./CoachCard.css";
+import Popup from "reactjs-popup";
+import "reactjs-popup/dist/index.css";
+import BookAppointment from "../BookAppointmentComp/BookAppointment";
 
 function CoachCard({ coachDetails }) {
   return (
@@ -14,7 +17,21 @@ function CoachCard({ coachDetails }) {
       <h3>Coach Id: {coachDetails.id}</h3>
       <p>Mobile No: {coachDetails.mobileNumber}</p>
       <p>Speciality: {coachDetails.speciality}</p>
-      <button className="book-appointment-btn">Book an Appointment</button>
+      <Popup
+        trigger={
+          <button className="book-appointment-btn">Book an Appointment</button>
+        }
+        modal
+        nested
+      >
+        {() => (
+          <BookAppointment
+            coachId={coachDetails.id}
+            appointmentType={"new"}
+            bookingId={null}
+          />
+        )}
+      </Popup>
     </div>
   );
 }

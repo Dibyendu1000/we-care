@@ -59,7 +59,7 @@ function RegisterUser() {
             <h3>User Profile</h3>
           </div>
           <div className="user-name-register" id="user-register-field">
-            <lable for="name-user">Name</lable>
+            <lable htmlFor="name-user">Name</lable>
             <br />
             <input
               type="text"
@@ -70,7 +70,7 @@ function RegisterUser() {
             />
           </div>
           <div className="user-password-register" id="user-register-field">
-            <lable for="password-user">Password</lable>
+            <lable htmlFor="password-user">Password</lable>
             <br />
             <input
               type="text"
@@ -81,7 +81,7 @@ function RegisterUser() {
             />
           </div>
           <div className="user-dob-register" id="user-register-field">
-            <lable for="dob-user">Date of Birth</lable>
+            <lable htmlFor="dob-user">Date of Birth</lable>
             <br />
             <input
               type="date"
@@ -92,9 +92,9 @@ function RegisterUser() {
             />
           </div>
           <div className="user-gender-register" id="user-register-field">
-            <lable for="gender">Gender</lable>
+            <lable htmlFor="gender">Gender</lable>
             <br />
-            <label for="male">Male</label>
+            <label htmlFor="male">Male</label>
             <input
               type="radio"
               className="male"
@@ -102,7 +102,7 @@ function RegisterUser() {
               value="M"
               onChange={handleChange}
             />
-            <label for="female">Female</label>
+            <label htmlFor="female">Female</label>
             <input
               type="radio"
               className="female"
@@ -112,7 +112,7 @@ function RegisterUser() {
             />
           </div>
           <div className="user-mobile-register" id="user-register-field">
-            <lable for="mobile-user">Mobile Number</lable>
+            <lable htmlFor="mobile-user">Mobile Number</lable>
             <br />
             <input
               type="text"
@@ -123,7 +123,7 @@ function RegisterUser() {
             />
           </div>
           <div className="user-email-register" id="user-register-field">
-            <lable for="email">Email</lable>
+            <lable htmlFor="email">Email</lable>
             <br />
             <input
               type="text"
@@ -134,7 +134,7 @@ function RegisterUser() {
             />
           </div>
           <div className="user-pincode-register" id="user-register-field">
-            <lable for="pincode">Pincode</lable>
+            <lable htmlFor="pincode">Pincode</lable>
             <br />
             <input
               type="text"
@@ -145,7 +145,7 @@ function RegisterUser() {
             />
           </div>
           <div className="user-city-register" id="user-register-field">
-            <lable for="city">City</lable>
+            <lable htmlFor="city">City</lable>
             <br />
             <input
               type="text"
@@ -156,7 +156,7 @@ function RegisterUser() {
             />
           </div>
           <div className="user-state-register" id="user-register-field">
-            <lable for="state">State</lable>
+            <lable htmlFor="state">State</lable>
             <br />
             <input
               type="text"
@@ -167,7 +167,7 @@ function RegisterUser() {
             />
           </div>
           <div className="user-country-register" id="user-register-field">
-            <lable for="country">Country</lable>
+            <lable htmlFor="country">Country</lable>
             <br />
             <input
               type="text"

@@ -21,3 +21,19 @@ export const registerIdentity = async (path, payload) => {
   });
   return await res.json();
 };
+
+export const deleteIdentity = async (path, id) => {
+  const res = await fetch(baseURL + path + id, {
+    method: "DELETE",
+  });
+  return await res.json();
+};
+
+export const updateIdentity = async (path, id, payload) => {
+  console.log(payload);
+  await fetch(baseURL + path + id, {
+    method: "PUT",
+    body: JSON.stringify(payload),
+    headers: { "Content-Type": "application/json" },
+  });
+};

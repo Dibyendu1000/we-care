@@ -58,18 +58,18 @@
   ],
   "bookings": [
     {
-      "appointmentDate": "2020-09-24",
-      "slot": "10 AM to 11 AM",
+      "appointmentDate": "2024-05-13",
+      "slot": "9 AM to 10 AM",
       "userId": "1",
       "coachId": "1",
       "id": "1"
     },
     {
-      "appointmentDate": "2020-09-24",
+      "appointmentDate": "2024-05-01",
       "slot": "11 AM to 12 PM",
-      "userId": "6ee5",
-      "coachId": "1",
-      "id": "2"
+      "userId": "1",
+      "coachId": "6947",
+      "id": "9d05"
     }
   ]
 }
