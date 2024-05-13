@@ -41,94 +41,100 @@ function RegisterCoach() {
   return (
     <>
       <Navbar />
-      <div className="register-main-coach">
-        <form className="register-form-coach">
-          <div className="form-header-coach">
-            <img src={coachLogo} alt="coachLogo" />
-            <h3>Life Coach Profile</h3>
-          </div>
-          <div className="coach-name-register" id="coach-register-field">
-            <lable htmlFor="name-coach">Name</lable>
-            <br />
-            <input
-              type="text"
-              className="name-coach"
-              value={name}
-              name="name"
-              onChange={handleChange}
-            />
-          </div>
-          <div className="coach-password-register" id="coach-register-field">
-            <lable htmlFor="password-coach">Password</lable>
-            <br />
-            <input
-              type="text"
-              className="password-coach"
-              name="password"
-              value={password}
-              onChange={handleChange}
-            />
-          </div>
-          <div className="coach-dob-register" id="coach-register-field">
-            <lable htmlFor="dob-coach">Date of Birth</lable>
-            <br />
-            <input
-              type="date"
-              className="dob-coach"
-              name="dateOfBirth"
-              value={dateOfBirth}
-              onChange={handleChange}
-            />
-          </div>
-          <div className="coach-gender-register" id="coach-register-field">
-            <lable htmlFor="gender">Gender</lable>
-            <br />
-            <label htmlFor="male">Male</label>
-            <input
-              type="radio"
-              className="male"
-              name="gender"
-              value="M"
-              onChange={handleChange}
-            />
-            <label htmlFor="female">Female</label>
-            <input
-              type="radio"
-              className="female"
-              name="gender"
-              value="F"
-              onChange={handleChange}
-            />
-          </div>
-          <div className="coach-mobile-register" id="coach-register-field">
-            <lable htmlFor="mobile-coach">Mobile Number</lable>
-            <br />
-            <input
-              type="text"
-              className="mobile-coach"
-              name="mobileNumber"
-              value={mobileNumber}
-              onChange={handleChange}
-            />
-          </div>
-          <div className="coach-speciality-register" id="coach-register-field">
-            <lable htmlFor="speciality-coach">Speciality</lable>
-            <br />
-            <input
-              type="text"
-              className="speciality-coach"
-              name="speciality"
-              value={speciality}
-              onChange={handleChange}
-            />
-          </div>
-          <div className="coach-button-register">
-            <button className="register-coach" onClick={handleSubmit}>
-              Register
-            </button>
-          </div>
-        </form>
+      <div className="register-coach-container">
+        <div className="register-main-coach">
+          <form className="register-form-coach">
+            <div className="form-header-coach">
+              <img src={coachLogo} alt="coachLogo" />
+              <h3>Life Coach Profile</h3>
+            </div>
+            <div className="coach-name-register" id="coach-register-field">
+              <lable htmlFor="name-coach">Name</lable>
+              <br />
+              <input
+                type="text"
+                className="name-coach"
+                value={name}
+                name="name"
+                onChange={handleChange}
+              />
+            </div>
+            <div className="coach-password-register" id="coach-register-field">
+              <lable htmlFor="password-coach">Password</lable>
+              <br />
+              <input
+                type="text"
+                className="password-coach"
+                name="password"
+                value={password}
+                onChange={handleChange}
+              />
+            </div>
+            <div className="coach-dob-register" id="coach-register-field">
+              <lable htmlFor="dob-coach">Date of Birth</lable>
+              <br />
+              <input
+                type="date"
+                className="dob-coach"
+                name="dateOfBirth"
+                value={dateOfBirth}
+                onChange={handleChange}
+              />
+            </div>
+            <div className="coach-gender-register" id="coach-register-field">
+              <lable htmlFor="gender">Gender</lable>
+              <br />
+              <label htmlFor="male">Male</label>
+              <input
+                type="radio"
+                className="male"
+                name="gender"
+                value="M"
+                onChange={handleChange}
+              />
+              <label htmlFor="female">Female</label>
+              <input
+                type="radio"
+                className="female"
+                name="gender"
+                value="F"
+                onChange={handleChange}
+              />
+            </div>
+            <div className="coach-mobile-register" id="coach-register-field">
+              <lable htmlFor="mobile-coach">Mobile Number</lable>
+              <br />
+              <input
+                type="text"
+                className="mobile-coach"
+                name="mobileNumber"
+                value={mobileNumber}
+                onChange={handleChange}
+              />
+            </div>
+            <div
+              className="coach-speciality-register"
+              id="coach-register-field"
+            >
+              <lable htmlFor="speciality-coach">Speciality</lable>
+              <br />
+              <input
+                type="text"
+                className="speciality-coach"
+                name="speciality"
+                value={speciality}
+                onChange={handleChange}
+              />
+            </div>
+            <div className="coach-button-register">
+              <button className="register-coach" onClick={handleSubmit}>
+                Register
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
+
       <Footer />
     </>
   );

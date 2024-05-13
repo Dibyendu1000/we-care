@@ -1,3 +1,7 @@
+.register-user-container {
+  padding: 80px;
+}
+
 .register-main-user {
   color: white;
   background-color: black;
@@ -5,7 +9,7 @@
   height: 500px;
   border-radius: 10px;
   margin: auto;
-  padding: 0px 10px 100px 10px;
+  padding: 0.5px 10px 102px 10px;
 }
 
 img {
@@ -92,4 +96,8 @@ img {
   position: relative;
   top: 350px;
   left: -150px;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  font-size: medium;
 }
