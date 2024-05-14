@@ -11,7 +11,7 @@ function MySchedule() {
 
   useEffect(() => {
     loadSchedules();
-    console.log(schedules);
+    console.log(schedules, schedules.length);
   }, []);
 
   const loadSchedules = async () => {
@@ -22,11 +22,17 @@ function MySchedule() {
   return (
     <div>
       <Navbar />
-      <div className="scheduleCard">
-        {schedules.map((schedule) => (
-          <ScheduleCard scheduleDetails={schedule} />
-        ))}
-      </div>
+      {schedules && schedules.length > 0 ? (
+        <div className="scheduleCard">
+          {schedules.map((schedule) => (
+            <ScheduleCard scheduleDetails={schedule} />
+          ))}
+        </div>
+      ) : (
+        <div className="emptySchedule">
+          <h1 className="emptySchedule-title"> No planned schedules yet </h1>
+        </div>
+      )}
       <Footer />
     </div>
   );

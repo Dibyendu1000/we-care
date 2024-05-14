@@ -24,11 +24,21 @@ function MyAppointment() {
   return (
     <div>
       <Navbar />
-      <div className="appointmentCard">
-        {appointments.map((appointment) => (
-          <AppointmentCard appointmentDetails={appointment} />
-        ))}
-      </div>
+      {appointments && appointments.length > 0 ? (
+        <div className="myAppointments">
+          <div className="appointmentCard">
+            {appointments.map((appointment) => (
+              <AppointmentCard appointmentDetails={appointment} />
+            ))}
+          </div>
+        </div>
+      ) : (
+        <div className="emptyAppointment">
+          <h1 className="emptyAppointment-title">
+            No planned appointments yet
+          </h1>
+        </div>
+      )}
       <div className="my-appointment-btns">
         <button
           className="go-back-btn-appointment"
@@ -37,7 +47,6 @@ function MyAppointment() {
           Go Back
         </button>
       </div>
-
       <Footer />
     </div>
   );

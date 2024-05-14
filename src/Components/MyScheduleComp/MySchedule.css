@@ -2,3 +2,17 @@
   padding-top: 60px;
   text-align: center;
 }
+
+.emptySchedule {
+  padding: 60px;
+  font-size: large;
+  text-align: center;
+  background-image: url("../../Assets/bookAppointmentLogo.png");
+  background-repeat: no-repeat;
+  background-size: 200px;
+  background-position: center;
+}
+
+.emptySchedule-title {
+  padding-top: 260px;
+}
