@@ -14,9 +14,12 @@ WeCare is an online Life Coaching application that helps its users to sign up an
 
 json-server will act as the backend for this application
 
-### `npm install -g npx json-server --watch db.json --port 8080`
+### `npx json-server --watch db.json --port 8080`
 
-This will start the server at port 8080
+> cd src
+> \src> cd DB
+> \src\DB>npx json-server --watch db.json --port 8080
+> This will start the server at port 8080
 
 ### `npm i`
 
@@ -24,4 +27,5 @@ Installs all other necessary libraries needed to run the project
 
 ### `npm run start`
 
-Starts the application. Enjoy the application
+> npm run start
+> Starts the application. Enjoy the application
